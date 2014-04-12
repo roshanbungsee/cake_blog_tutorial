@@ -16,7 +16,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,23 +39,34 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+		
+		Welcome <?php print $this->Session->read('Auth.User.username'); ?>
 		</div>
+		
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
+			
+			<div id="logout">
+			<?php if (AuthComponent::user()):
+					//The user is logged in, show the logout link
+					echo $this->Html->link('Log out', array('controller' => 'users', 'action' => 'logout'));
+				else:
+					// The user is not logged in, show login link
+					echo $this->Html->link('Log in', array('controller' => 'users', 'action' => 'login'));
+
+				endif;
+			?>
+			</div>
+			
 		</div>
 		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
+			<?php echo $this->Html->tag('span', 'cakeblog', array('class' => 'Blog User'));
 			?>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	
 </body>
 </html>

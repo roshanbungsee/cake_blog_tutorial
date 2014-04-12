@@ -1,0 +1,344 @@
+2014-02-19 14:58:42 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakeblog/Posts
+Stack Trace:
+#0 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-19 15:02:38 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakeblog/Posts
+Stack Trace:
+#0 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-19 15:06:01 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /cakeblog/posts/view/1
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-19 15:49:00 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /cakeblog/posts/view/2
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-19 15:49:11 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /cakeblog/posts/view/2
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-02-25 22:36:08 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakeblog/post
+Stack Trace:
+#0 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-02-26 01:44:27 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /cakeblog/posts/view/1
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-03-05 08:25:58 Error: [MissingViewException] View file "C:\wamp\www\cakeblog\app\View\Posts\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\cakeblog\\app\\View\\Posts\\view.ctp',
+)
+Request URL: /cakeblog/posts/view/1
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cakeblog\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-05 15:41:58 Error: Fatal Error (64): Cannot redeclare UsersController::beforeFilter() in [C:\wamp\www\cakeblog\app\Controller\UsersController.php, line 71]
+2014-03-05 15:41:58 Error: [FatalErrorException] Cannot redeclare UsersController::beforeFilter()
+Request URL: /cakeblog/users
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 71)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 71, Array)
+#2 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 71, Array)
+#3 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-05 15:42:13 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /cakeblog/user
+Stack Trace:
+#0 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-05 16:00:54 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /cakeblog/user
+Stack Trace:
+#0 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-05 16:00:56 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /cakeblog/user
+Stack Trace:
+#0 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-05 16:01:11 Error: [MissingViewException] View file "C:\wamp\www\cakeblog\app\View\Posts\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\cakeblog\\app\\View\\Posts\\view.ctp',
+)
+Request URL: /cakeblog/posts/view/3
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cakeblog\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-05 16:02:18 Error: Fatal Error (64): Cannot redeclare UsersController::beforeFilter() in [C:\wamp\www\cakeblog\app\Controller\UsersController.php, line 71]
+2014-03-05 16:02:18 Error: [FatalErrorException] Cannot redeclare UsersController::beforeFilter()
+Request URL: /cakeblog/users
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 71)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 71, Array)
+#2 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\wamp\www\cak...', 71, Array)
+#3 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-05 16:03:57 Error: [MissingViewException] View file "C:\wamp\www\cakeblog\app\View\Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\cakeblog\\app\\View\\Users\\index.ctp',
+)
+Request URL: /cakeblog/users
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cakeblog\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-05 16:08:25 Error: [MissingViewException] View file "C:\wamp\www\cakeblog\app\View\Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\cakeblog\\app\\View\\Users\\index.ctp',
+)
+Request URL: /cakeblog/users
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cakeblog\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-05 16:08:52 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /cakeblog/user
+Stack Trace:
+#0 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-05 16:09:04 Error: [MissingViewException] View file "C:\wamp\www\cakeblog\app\View\Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\cakeblog\\app\\View\\Users\\index.ctp',
+)
+Request URL: /cakeblog/users
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cakeblog\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-05 16:38:54 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [C:\wamp\www\cakeblog\app\Model\User.php, line 29]
+2014-03-05 16:38:54 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /cakeblog/users/add
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 29, Array)
+#2 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 29, Array)
+#3 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-05 16:42:42 Error: Fatal Error (4): syntax error, unexpected T_RETURN, expecting T_FUNCTION in [C:\wamp\www\cakeblog\app\Model\User.php, line 38]
+2014-03-05 16:42:42 Error: [FatalErrorException] syntax error, unexpected T_RETURN, expecting T_FUNCTION
+Request URL: /cakeblog/users
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 38, Array)
+#2 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 38, Array)
+#3 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-12 13:51:24 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [C:\wamp\www\cakeblog\app\Model\User.php, line 32]
+2014-03-12 13:51:24 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /cakeblog/users/add
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 32, Array)
+#2 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 32, Array)
+#3 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-12 14:09:55 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\wamp\www\cakeblog\app\View\Users\index.ctp, line 15]
+2014-03-12 14:09:55 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakeblog/users
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 15, Array)
+#2 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 15, Array)
+#3 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-12 14:10:18 Error: Fatal Error (4): syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in [C:\wamp\www\cakeblog\app\View\Users\index.ctp, line 15]
+2014-03-12 14:10:18 Error: [FatalErrorException] syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM
+Request URL: /cakeblog/users
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 15, Array)
+#2 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 15, Array)
+#3 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-12 14:15:44 Error: [NotFoundException] Invalid user
+Request URL: /cakeblog/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 C:\wamp\www\cakeblog\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-12 14:16:04 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakeblog/users/delete
+Stack Trace:
+#0 C:\wamp\www\cakeblog\app\Controller\UsersController.php(52): CakeRequest->onlyAllow('post')
+#1 [internal function]: UsersController->delete()
+#2 C:\wamp\www\cakeblog\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-03-12 14:56:42 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [C:\wamp\www\cakeblog\app\Model\User.php, line 34]
+2014-03-12 14:56:42 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /cakeblog/users/add
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 34, Array)
+#2 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 34, Array)
+#3 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-12 15:51:47 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakeblog/users/
+Stack Trace:
+#0 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-12 16:11:45 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakeblog/users
+Stack Trace:
+#0 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-12 16:12:46 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\wamp\www\cakeblog\app\Controller\UsersController.php, line 85]
+2014-03-12 16:12:46 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakeblog/users
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\cak...', 85, Array)
+#2 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\cak...', 85, Array)
+#3 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-12 16:13:19 Error: [MissingViewException] View file "C:\wamp\www\cakeblog\app\View\Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\wamp\\www\\cakeblog\\app\\View\\Users\\index.ctp',
+)
+Request URL: /cakeblog/users
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\View\View.php(457): View->_getViewFileName(NULL)
+#1 C:\wamp\www\cakeblog\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 C:\wamp\www\cakeblog\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-12 16:15:08 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [C:\wamp\www\cakeblog\app\Model\User.php, line 27]
+2014-03-12 16:15:08 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /cakeblog/users/add
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 27, Array)
+#2 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 27, Array)
+#3 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-12 16:36:34 Error: Fatal Error (1): Class 'SimplePasswordHasher' not found in [C:\wamp\www\cakeblog\app\Model\User.php, line 28]
+2014-03-12 16:36:34 Error: [FatalErrorException] Class 'SimplePasswordHasher' not found
+Request URL: /cakeblog/users/add
+Stack Trace:
+#0 C:\wamp\www\cakeblog\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 28, Array)
+#2 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'SimplePa...', 'C:\wamp\www\cak...', 28, Array)
+#3 C:\wamp\www\cakeblog\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-12 16:42:51 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /cakeblog/login
+Stack Trace:
+#0 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-03-25 22:24:12 Error: [MissingControllerException] Controller class LayoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LayoutController',
+  'plugin' => NULL,
+)
+Request URL: /cakeblog/layout
+Stack Trace:
+#0 C:\wamp\www\cakeblog\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

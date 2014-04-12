@@ -1,14 +1,13 @@
-<?php
-
-class PostsController extends AppController {
+<?php class PostsController extends AppController {
     public $helpers = array('Html', 'Form', 'Session');
-    public $components = array('Session');
+	public $components = array('Session');
 
     public function index() {
         $this->set('posts', $this->Post->find('all'));
-    }
 
-    public function view($id) {
+	}
+
+	public function view($id) {
         if (!$id) {
             throw new NotFoundException(__('Invalid post'));
         }
@@ -18,9 +17,9 @@ class PostsController extends AppController {
             throw new NotFoundException(__('Invalid post'));
         }
         $this->set('post', $post);
-    }
+    }	
 
-    public function add() {
+	public function add() {
         if ($this->request->is('post')) {
             $this->Post->create();
             if ($this->Post->save($this->request->data)) {
@@ -29,8 +28,10 @@ class PostsController extends AppController {
             }
             $this->Session->setFlash(__('Unable to add your post.'));
         }
-    }
-	public function edit($id = null) {
+ 
+   }
+   
+   public function edit($id = null) {
     if (!$id) {
         throw new NotFoundException(__('Invalid post'));
     }
@@ -53,6 +54,7 @@ class PostsController extends AppController {
         $this->request->data = $post;
     }
 	}
+
 	public function delete($id) {
     if ($this->request->is('get')) {
         throw new MethodNotAllowedException();
@@ -64,7 +66,7 @@ class PostsController extends AppController {
         );
         return $this->redirect(array('action' => 'index'));
     }
-}
-}
+	}
 
+}
 ?>

@@ -19,7 +19,11 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-App::uses('Model', 'Model');
+
+
+App::uses('AppModel', 'Model');
+App::uses('AuthComponent', 'Controller/Component');
+App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
 
 /**
  * Application model for Cake.
